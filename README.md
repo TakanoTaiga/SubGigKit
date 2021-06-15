@@ -46,10 +46,10 @@ void Serialbegin()
 ```
 この関数はシリアル通信の速度とTimeoutを決定しています。値は返しません。
 ```
-(Int or Double or uInt)　SerialreadString(String,(Int or Double or uInt))
+(Int or Double or uInt)　SerialreadString(String,(Int or Double or uInt) , uInt address)
 ```
-この関数は二つ目の引数の型が存在するか調べます。存在すれば二つ目の引数の型で返します。存在しない場合は０かNULLを返します。
+この関数は二つ目の引数の型が存在するか調べます。存在すれば二つ目の引数の型で返します。存在しない場合は０かNULLを返します。addressはオプションです。アドレスを指定するとアドレスが送信と受信が一致している時のみに通信が成立します。
 ```
-String Serialprintln((Int or Double or uInt))
+String Serialprintln((Int or Double or uInt) , uInt address)
 ```
-この関数はIM920で使用するデータに最適化します。String型を返します。
+この関数はIM920で使用するデータに最適化します。String型を返します。addressはオプションです。アドレスを指定するとアドレスが送信と受信が一致している時のみに通信が成立します。アドレスは単一のプログラムの中で複数使用できます。
