@@ -1,6 +1,6 @@
 # SubGigKit
 
-Arduino library
+Arduino Framework 
 簡単にIM920を使って通信するためのライブラリーです。
 [このライブラリー](https://github.com/TakanoTaiga/SerialComsKit)に依存しています。ですがZipファイルにこのライブラリーは含まれています。
 
@@ -42,7 +42,7 @@ SubGigKit
 ```
 ### functions
 ```
-void Serialbegin()
+void Serialbegin(int SerialChannel = 0)
 ```
 この関数はシリアル通信の速度とTimeoutを決定しています。値は返しません。
 ```
