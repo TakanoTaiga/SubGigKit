@@ -1,4 +1,4 @@
-# SubGigKit
+# SubGigKit Alpha version
 
 Arduino Framework 
 簡単にIM920を使って通信するためのライブラリーです。
